@@ -1,16 +1,16 @@
-function switch_to_app(app_name, number)
+function switch_to_app(number, apps)
     hs.hotkey.bind({ "cmd", "alt" }, number, function()
-        local app = hs.application.find(app_name)
-        if app then
-            app:activate()
-        else
-            hs.application.launchOrFocus(app_name)
+        for i = 1, #apps do
+            local is_found = hs.application.launchOrFocus(apps[i])
+            if is_found then
+                break
+            end
         end
     end)
 end
 
-switch_to_app("Google Chrome", "4")
-switch_to_app("Zed", "3")
-switch_to_app("Terminal", "2")
-switch_to_app("Telegram", "1")
-switch_to_app("Outline", "5")
+switch_to_app("1", { "Telegram" })
+switch_to_app("2", { "Ghostty", "Alacritty" })
+switch_to_app("3", { "Zed" })
+switch_to_app("4", { "Google Chrome" })
+switch_to_app("5", { "Outline" })
