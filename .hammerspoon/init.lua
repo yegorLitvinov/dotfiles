@@ -1,5 +1,5 @@
 function switch_to_app(number, apps)
-    hs.hotkey.bind({ "cmd", "alt" }, number, function()
+    hs.hotkey.bind({ "cmd", "alt", "ctrl" }, number, function()
         for i = 1, #apps do
             local is_found = hs.application.launchOrFocus(apps[i])
             if is_found then
@@ -9,10 +9,11 @@ function switch_to_app(number, apps)
     end)
 end
 
-switch_to_app("1", { "Telegram" })
-switch_to_app("2", { "Ghostty", "Alacritty" })
-switch_to_app("3", { "Zed" })
-switch_to_app("4", { "Google Chrome" })
-switch_to_app("5", { "Outline" })
-switch_to_app("6", { "Thunderbird" })
-switch_to_app("7", { "Notes" })
+switch_to_app("m", { "Telegram" })
+switch_to_app("t", { "Ghostty", "Alacritty" })
+switch_to_app("z", { "Zed" })
+switch_to_app("c", { "Google Chrome" })
+switch_to_app("o", { "Outline" })
+switch_to_app("b", { "Thunderbird" })
+switch_to_app("n", { "Notes" })
+switch_to_app("f", { "Finder" })
