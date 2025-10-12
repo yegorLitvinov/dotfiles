@@ -9,11 +9,11 @@ function switch_to_app(number, apps)
     end)
 end
 
-switch_to_app("m", { "Telegram" })
+switch_to_app("e", { "Telegram" })
 switch_to_app("t", { "Ghostty", "Alacritty" })
 switch_to_app("z", { "Zed" })
 switch_to_app("c", { "Google Chrome" })
 switch_to_app("o", { "Outline" })
-switch_to_app("b", { "Thunderbird" })
+switch_to_app("m", { "Thunderbird" })
 switch_to_app("n", { "Notes" })
 switch_to_app("f", { "Finder" })
