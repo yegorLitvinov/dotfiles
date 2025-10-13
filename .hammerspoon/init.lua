@@ -9,7 +9,7 @@ function switch_to_app(number, apps)
     end)
 end
 
-switch_to_app("e", { "Telegram" })
+switch_to_app("g", { "Telegram" })
 switch_to_app("t", { "Ghostty", "Alacritty" })
 switch_to_app("z", { "Zed" })
 switch_to_app("c", { "Google Chrome" })
