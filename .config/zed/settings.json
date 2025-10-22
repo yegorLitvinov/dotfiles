@@ -7,20 +7,28 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "expand_outlines_with_depth": 100
+  },
+  "gutter": {
+    "runnables": true
+  },
+  "relative_line_numbers": false,
+  "excerpt_context_lines": 5,
   "soft_wrap": "editor_width",
   "show_completions_on_input": true,
   "vim_mode": true,
   "confirm_quit": true,
   "when_closing_with_no_tabs": "keep_window_open",
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
   "agent": {
     "default_profile": "write",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-thinking"
+      "provider": "openrouter",
+      "model": "openai/gpt-5"
     }
   },
   "telemetry": {
@@ -31,13 +39,12 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "KTRZ Monokai"
+    "dark": "macOS Classic Dark"
   },
   "languages": {
     "Python": {
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "on",
-      "show_edit_predictions": false,
       "formatter": [
         {
           "language_server": {
@@ -66,5 +73,5 @@
     }
   },
   // The default number of lines to expand excerpts in the multibuffer by.
-  "expand_excerpt_lines": 9
+  "expand_excerpt_lines": 5
 }
