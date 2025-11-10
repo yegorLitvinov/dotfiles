@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "outline_panel": {
     "expand_outlines_with_depth": 100
   },
@@ -18,9 +21,12 @@
   "soft_wrap": "editor_width",
   "show_completions_on_input": true,
   "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "on_yank"
+  },
   "confirm_quit": true,
   "when_closing_with_no_tabs": "keep_window_open",
-  "show_edit_predictions": true,
+  "show_edit_predictions": false,
   "features": {
     "edit_prediction_provider": "supermaven"
   },
@@ -38,8 +44,8 @@
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "macOS Classic Dark"
+    "light": "Catppuccin Latte (Blur) [Heavy]",
+    "dark": "KTRZ Monokai"
   },
   "languages": {
     "Python": {
