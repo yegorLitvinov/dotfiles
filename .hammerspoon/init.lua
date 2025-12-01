@@ -1,19 +1,21 @@
-function switch_to_app(number, apps)
-    hs.hotkey.bind({ "cmd", "alt", "ctrl" }, number, function()
-        for i = 1, #apps do
-            local is_found = hs.application.launchOrFocus(apps[i])
-            if is_found then
-                break
+function switch_to_app(keys, apps)
+    for key_index = 1, #keys do
+        hs.hotkey.bind({ "cmd", "alt", "ctrl" }, keys[key_index], function()
+            for app_index = 1, #apps do
+                local is_found = hs.application.launchOrFocus(apps[app_index])
+                if is_found then
+                    break
+                end
             end
-        end
-    end)
+        end)
+    end
 end
 
-switch_to_app("g", { "Telegram" })
-switch_to_app("t", { "Ghostty", "Alacritty" })
-switch_to_app("z", { "Zed" })
-switch_to_app("c", { "Google Chrome" })
-switch_to_app("o", { "Outline" })
-switch_to_app("m", { "Thunderbird" })
-switch_to_app("n", { "Notes" })
-switch_to_app("f", { "Finder" })
+switch_to_app({ "e", "у" }, { "Notes" })
+switch_to_app({ "r", "к" }, { "Finder" })
+switch_to_app({ "t", "е" }, { "Outline" })
+switch_to_app({ "a", "ф" }, { "Thunderbird" })
+switch_to_app({ "s", "ы" }, { "Ghostty", "Alacritty" })
+switch_to_app({ "d", "в" }, { "Zed" })
+switch_to_app({ "f", "а" }, { "Google Chrome" })
+switch_to_app({ "g", "п" }, { "Telegram" })
