@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "hide_gitignore": true
+  },
   "edit_predictions": {
     "mode": "subtle"
   },
@@ -16,7 +19,7 @@
   "gutter": {
     "runnables": true
   },
-  "relative_line_numbers": false,
+  "relative_line_numbers": "disabled",
   "excerpt_context_lines": 5,
   "soft_wrap": "editor_width",
   "show_completions_on_input": true,
@@ -48,6 +51,9 @@
     "dark": "KTRZ Monokai"
   },
   "languages": {
+    "HTML": {
+      "format_on_save": "off"
+    },
     "Python": {
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "on",
