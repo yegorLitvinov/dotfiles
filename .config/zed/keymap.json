@@ -9,15 +9,17 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-g": "git_panel::ToggleFocus"
-    }
+      "cmd-shift-g": "git_panel::ToggleFocus",
+      "cmd-shift-a": "outline_panel::ToggleFocus",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
       "cmd-shift-g": "git_panel::ToggleFocus",
+      "cmd-shift-a": "outline_panel::ToggleFocus",
       "ctrl-n": "search::SelectNextMatch",
-      "ctrl-shift-n": "search::SelectPreviousMatch"
-    }
-  }
+      "ctrl-shift-n": "search::SelectPreviousMatch",
+    },
+  },
 ]
