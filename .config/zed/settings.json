@@ -8,16 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "project_panel": {
-    "hide_gitignore": true
-  },
-  "edit_predictions": {
-    "mode": "subtle"
+    "hide_gitignore": true,
   },
   "outline_panel": {
-    "expand_outlines_with_depth": 100
+    "expand_outlines_with_depth": 100,
   },
   "gutter": {
-    "runnables": true
+    "runnables": true,
   },
   "relative_line_numbers": "disabled",
   "excerpt_context_lines": 5,
@@ -25,34 +22,27 @@
   "show_completions_on_input": true,
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
   },
   "confirm_quit": true,
   "when_closing_with_no_tabs": "keep_window_open",
   "show_edit_predictions": false,
-  "features": {
-    "edit_prediction_provider": "supermaven"
-  },
-  "agent": {
-    "default_profile": "write",
-    "default_model": {
-      "provider": "openrouter",
-      "model": "openai/gpt-5"
-    }
-  },
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "ui_font_size": 16,
   "buffer_font_size": 13,
+  "buffer_font_features": {
+    "calt": false,
+  },
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte (Blur) [Heavy]",
-    "dark": "KTRZ Monokai"
+    "light": "One Light",
+    "dark": "KTRZ Monokai",
   },
   "languages": {
     "HTML": {
-      "format_on_save": "off"
+      "format_on_save": "off",
     },
     "Python": {
       "language_servers": ["pyright", "ruff"],
@@ -60,30 +50,30 @@
       "formatter": [
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    }
+            "name": "ruff",
+          },
+        },
+      ],
+    },
   },
   "lsp": {
     "ruff": {
       "initialization_options": {
         "settings": {
           "organizeImports": true,
-          "fixAll": true
-        }
-      }
+          "fixAll": true,
+        },
+      },
     },
     "basedpyright": {
       "settings": {
         "basedpyright.analysis": {
           "diagnosticMode": "workspace",
-          "inlayHints.callArgumentNames": false
-        }
-      }
-    }
+          "inlayHints.callArgumentNames": false,
+        },
+      },
+    },
   },
   // The default number of lines to expand excerpts in the multibuffer by.
-  "expand_excerpt_lines": 5
+  "expand_excerpt_lines": 5,
 }
