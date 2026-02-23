@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "icon_theme": "Zed (Default)",
   "project_panel": {
     "hide_gitignore": true,
   },
@@ -38,7 +42,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "KTRZ Monokai",
+    "dark": "One Dark",
   },
   "languages": {
     "HTML": {
