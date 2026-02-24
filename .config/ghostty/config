@@ -1,0 +1,4 @@
+theme = light:Ayu Light,dark:Atom One Dark
+window-save-state = always
+font-feature = -calt, -liga, -dlig
+keybind = shift+enter=text:\n
