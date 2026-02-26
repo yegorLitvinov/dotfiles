@@ -110,4 +110,6 @@ alias l="ls -lah"
 alias codex="codex --dangerously-bypass-approvals-and-sandbox"
 alias codexh="codex -c model_reasoning_effort=high"
 alias codexx="codex -c model_reasoning_effort=xhigh"
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+function dotfiles {
+   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
+}
