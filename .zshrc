@@ -108,8 +108,7 @@ alias dc=docker-compose
 alias da=django-admin
 alias l="ls -lah"
 alias codex="codex --dangerously-bypass-approvals-and-sandbox"
-alias codexh="codex -c model_reasoning_effort=high"
-alias codexx="codex -c model_reasoning_effort=xhigh"
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
 }
+export XDG_CONFIG_HOME="$HOME/.config"
