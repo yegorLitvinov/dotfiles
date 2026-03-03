@@ -3,3 +3,4 @@ window-save-state = always
 font-feature = -calt, -liga, -dlig
 cursor-style = block
 shell-integration-features = no-cursor
+confirm-close-surface = false
