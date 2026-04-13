@@ -112,3 +112,5 @@ function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
 }
 export XDG_CONFIG_HOME="$HOME/.config"
+
+[ -f "/Users/egor/.ghcup/env" ] && . "/Users/egor/.ghcup/env" # ghcup-env
