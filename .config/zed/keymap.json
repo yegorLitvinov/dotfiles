@@ -22,4 +22,22 @@
       "ctrl-shift-n": "search::SelectPreviousMatch",
     },
   },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "alt-cmd-b": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-cmd-b": "git::Branch"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-cmd-b": "git::Branch"
+    }
+  }
 ]
